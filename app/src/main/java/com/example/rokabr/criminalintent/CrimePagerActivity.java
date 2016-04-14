@@ -45,7 +45,7 @@ public class CrimePagerActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         // set the adapter to an unnamed instance of FragmentStatePagerAdapter, which
         // requires the FragmentManager to create. FragmentStatePagerAdapter is the agent
-        // managing the convo with ViewPager.
+        // managing the conversation with ViewPager.
         mViewPager.setAdapter(new FragmentStatePagerAdapter(fragmentManager) {
             @Override
             public Fragment getItem(int position) {
