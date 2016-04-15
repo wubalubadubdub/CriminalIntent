@@ -43,6 +43,15 @@
             android:id="@+id/crime_solved"
             android:text="@string/crime_solved_label"
             android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_delete"
+            android:id="@+id/delete_crime"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp" />
+
     </LinearLayout>
 
 </LinearLayout>
