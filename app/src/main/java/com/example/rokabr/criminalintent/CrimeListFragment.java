@@ -121,6 +121,7 @@ public class CrimeListFragment extends Fragment {
             mCrimeRecyclerView.setAdapter(mAdapter);
 
         } else {
+            mAdapter.setCrimes(crimes);
             mAdapter.notifyDataSetChanged();
         }
 
@@ -189,6 +190,10 @@ public class CrimeListFragment extends Fragment {
             View view = layoutInflater
                     .inflate(R.layout.list_item_crime, parent, false);
             return new CrimeHolder(view);
+        }
+
+        public void setCrimes(List<Crime> crimes) {
+            mCrimes = crimes;
         }
 
         // binds a ViewHolder's view to a model object (e.g. a Crime). Receives a

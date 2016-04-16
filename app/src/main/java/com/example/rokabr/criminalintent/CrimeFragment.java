@@ -128,6 +128,13 @@ public class CrimeFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+    }
+
     private void updateDate() {
         // get the Date as a string in the form dow mon dd hh:mm:ss zzz yyyy
         // where dow is day of week, mon is month, dd is day of month, zzz is timezone
